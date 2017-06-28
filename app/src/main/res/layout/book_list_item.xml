@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_margin="@dimen/margin_activity"
+              android:background="@color/colorOchre"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_book"
+        style="@style/ListImageView"
+        tools:background="@drawable/image_not_found" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_80dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/text_book_title"
+            android:tag="@string/tag_textview"
+            style="@style/ListTextView"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:maxLines="2"
+            tools:text="@string/placeholder_title"/>
+
+        <TextView
+            android:id="@+id/text_book_author"
+            android:tag="@string/tag_textview"
+            android:layout_below="@id/text_book_title"
+            style="@style/ListTextView"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            tools:text="@string/placeholder_author"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_80dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/image_book_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:src="@drawable/rating_none"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/text_book_price"
+            android:tag="@string/tag_textview"
+            style="@style/ListTextViewPrice"
+            android:layout_weight="2"
+            android:textSize="@dimen/textsize_medium"
+            android:background="@color/colorAccent"
+            tools:text="@string/placeholder_price"/>
+
+    </LinearLayout>
+
+</LinearLayout>

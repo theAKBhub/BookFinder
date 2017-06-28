@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Book Listing App</string>
+
+    <!-- -->
+    <!-- Information Strings -->
+    <!-- -->
+
+    <string name="info_search">Enter full or partial book title and/or author
+        name to get a list of available books.</string>
+    <string name="info_no_author">Author - unavailable</string>
+    <string name="info_no_preview">No preview available</string>
+    <string name="info_no_books">No books found that matched your search criteria</string>
+    <string name="info_no_price">Not priced</string>
+    <string name="info_not_priced">0.00</string>
+    <string name="info_no_rating">Rating - unavailable</string>
+    <string name="info_no_language">Language - unavailable</string>
+    <string name="info_no_desc">Description - unavailable</string>
+
+    <!-- -->
+    <!-- UI Element Hints -->
+    <!-- -->
+
+    <string name="hint_book_title">Enter Book Title (required)</string>
+    <string name="hint_book_author">Enter Book Author (optional)</string>
+
+
+    <!-- -->
+    <!-- Placeholder texts -->
+    <!-- -->
+    <string name="placeholder_title">De Foraminiferen-fauna Van Eenige Cycloclypeushoudende Gesteenten Van Java</string>
+    <string name="placeholder_author">Cornélie Marguerite Bramine Caudri</string>
+    <string name="placeholder_currency">GBP</string>
+    <string name="placeholder_price">£17.95</string>
+    <string name="placeholder_rating">Rating - 3.5</string>
+    <string name="placeholder_details">Published: Jun 1996\nCategory: Computers\nPrint Type: BOOK\nPages : 150\nEpub: Available\nPDF: Not available"</string>
+    <string name="placeholder_desc">Android is new, Android is open, and Android is fun. It\'s also serious about business. Android for Work shows you how to harness the power of Android to stay productive and take your office on the road. This book also sheds light on the often daunting task of finding the right Android phone for the business user.</string>
+
+
+    <!-- -->
+    <!-- Labels -->
+    <!-- -->
+    <string name="label_button_search">Search  Books</string>
+    <string name="label_booklist">Books List</string>
+    <string name="label_book_setting">Books List Settings</string>
+    <string name="label_price">Price</string>
+    <string name="label_gbp">£%.2f</string>
+    <string name="label_usd">$%.2f</string>
+    <string name="label_euro">€%.2f</string>
+    <string name="label_buy">Click to buy</string>
+    <string name="label_preview">Take a Look</string>
+    <string name="label_rating">Rating - %.1f/5</string>
+    <string name="label_published">Published - %s</string>
+    <string name="label_language">Language - %s</string>
+    <string name="label_category">Category - %s</string>
+    <string name="label_print_type">Print Type - %s</string>
+    <string name="label_page_count">Page Count - %d</string>
+    <string name="label_epub">EPUB - </string>
+    <string name="label_pdf">PDF - </string>
+    <string name="label_avail">Available</string>
+    <string name="label_noavail">Not Available</string>
+
+    <string name="newline">\n</string>
+
+
+    <!-- -->
+    <!-- UI Element Tags -->
+    <!-- -->
+    <string name="tag_textview">TextView</string>
+    <string name="tag_textview_2">TextViewRegular</string>
+    <string name="tag_edittext">EditText</string>
+    <string name="tag_button">Button</string>
+
+
+    <!-- -->
+    <!-- Settings -->
+    <!-- -->
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Book Finder Settings</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_relevance_value</string>
+
+    <!-- Label for order-by Relevance option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_relevance_label">Most Relevant</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+
+    <!-- Label for order-by Newest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">Newest First</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <!-- Strings For MaxResults Preference [CHAR LIMIT=30] -->
+    <string name="settings_maxresults_label">Max Results</string>
+    <string name="settings_maxresults_key" translatable="false">max_results</string>
+    <string name="settings_maxresults_default" translatable="false">@string/settings_maxresults_10_value</string>
+
+    <string name="settings_maxresults_10_label">10</string>
+    <string name="settings_maxresults_10_value" translatable="false">10</string>
+    <string name="settings_maxresults_15_label">15</string>
+    <string name="settings_maxresults_15_value" translatable="false">15</string>
+    <string name="settings_maxresults_20_label">20</string>
+    <string name="settings_maxresults_20_value" translatable="false">20</string>
+
+
+    <!-- -->
+    <!-- Error & Exception messages -->
+    <!-- -->
+    <string name="error_empty_string">Did you forget to enter a Book Title?</string>
+    <string name="error_invalid_string">You may have entered a number or an invalid character
+        in this field</string>
+    <string name="error_no_connection">Unfortunately your device doesn\'t have any internet connection.</string>
+    <string name="exception_invalid_orientation">Orientation is invalid</string>
+    <string name="exception_http_request">Problem making the HTTP request</string>
+    <string name="exception_url_invalid">Problem with the URL string</string>
+    <string name="exception_resp_code">Error response code</string>
+    <string name="exception_json_results">Problem retrieving JSON results</string>
+    <string name="exception_date_format">Problem formatting input date</string>
+
+</resources>

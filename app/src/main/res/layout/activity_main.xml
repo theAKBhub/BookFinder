@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/book_bg"
+android:fillViewport="true"
+tools:context="com.example.android.bookfinder.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_activity"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/book_vector"/>
+
+        <TextView
+            android:id="@+id/text_search_info"
+            android:tag="@string/tag_textview"
+            style="@style/TextViewInfo"
+            android:text="@string/info_search" />
+
+        <EditText
+            android:id="@+id/edit_book_title"
+            android:tag="@string/tag_edittext"
+            style="@style/EditTextSearch"
+            android:hint="@string/hint_book_title"/>
+
+        <EditText
+            android:id="@+id/edit_book_author"
+            android:tag="@string/tag_edittext"
+            style="@style/EditTextSearch"
+            android:hint="@string/hint_book_author"/>
+
+        <Button
+            android:id="@+id/button_search_books"
+            android:tag="@string/tag_button"
+            style="@style/ButtonSearch"
+            android:text="@string/label_button_search"/>
+
+    </LinearLayout>
+</ScrollView>

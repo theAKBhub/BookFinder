@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_order_by_labels">
+        <item>@string/settings_order_by_relevance_label</item>
+        <item>@string/settings_order_by_newest_label</item>
+    </string-array>
+
+    <string-array name="settings_order_by_values">
+        <item>@string/settings_order_by_relevance_value</item>
+        <item>@string/settings_order_by_newest_value</item>
+    </string-array>
+
+    <string-array name="settings_maxresult_labels">
+        <item>@string/settings_maxresults_10_label</item>
+        <item>@string/settings_maxresults_15_label</item>
+        <item>@string/settings_maxresults_20_label</item>
+    </string-array>
+
+    <string-array name="settings_maxresult_values">
+        <item>@string/settings_maxresults_10_value</item>
+        <item>@string/settings_maxresults_15_value</item>
+        <item>@string/settings_maxresults_20_value</item>
+    </string-array>
+</resources>

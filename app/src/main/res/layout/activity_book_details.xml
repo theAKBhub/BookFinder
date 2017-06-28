@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground"
+    tools:context="com.example.android.bookfinder.BookDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_thumbnail"
+                android:layout_width="@dimen/book_image_width"
+                android:layout_height="@dimen/book_image_height"
+                tools:background="@drawable/image_not_found"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:tag="@string/tag_textview"
+                    style="@style/TextViewDetailTopRight"
+                    android:textSize="@dimen/textsize_small"
+                    tools:text="@string/placeholder_title"/>
+
+                <TextView
+                    android:id="@+id/text_author"
+                    android:tag="@string/tag_textview"
+                    android:layout_below="@id/text_title"
+                    style="@style/TextViewDetailTopRightAuthor"
+                    tools:text="@string/placeholder_author"/>
+
+                <TextView
+                    android:id="@+id/text_rating"
+                    android:tag="@string/tag_textview"
+                    android:layout_below="@id/text_author"
+                    style="@style/TextViewDetailTopRightRating"
+                    tools:text="@string/placeholder_rating"/>
+
+                <TextView
+                    android:id="@+id/text_price"
+                    android:tag="@string/tag_textview"
+                    android:layout_below="@id/text_rating"
+                    style="@style/TextViewDetailTopRightPrice"
+                    tools:text="@string/placeholder_price"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_preview_book"
+                android:tag="@string/tag_button"
+                style="@style/ButtonDetailScreen"
+                android:layout_marginRight="@dimen/dimen_3dp"
+                android:text="@string/label_preview" />
+
+            <Button
+                android:id="@+id/button_buy_book"
+                android:tag="@string/tag_button"
+                style="@style/ButtonDetailScreen"
+                android:text="@string/label_buy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:background="@color/colorOchre"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_details"
+                android:tag="@string/tag_textview"
+                style="@style/TextViewDetailBottomLeft"
+                tools:text="@string/placeholder_details" />
+
+            <TextView
+                android:id="@+id/text_desc"
+                android:tag="@string/tag_textview_2"
+                style="@style/TextViewDetailBottomRight"
+                tools:text="@string/placeholder_desc" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

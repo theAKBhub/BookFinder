@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- Base application theme with ActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme with NoActionBar -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Splash Screen -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+
+    <!-- Information TextView -->
+    <style name="TextViewInfo">
+        <item name="android:layout_width">@dimen/dimen_300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20dp</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <!-- EditText -->
+    <style name="EditTextSearch">
+        <item name="android:layout_width">@dimen/dimen_300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
+        <item name="android:padding">@dimen/margin_activity</item>
+        <item name="android:background">@color/colorLatte</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <!-- Search Button -->
+    <style name="ButtonSearch">
+        <item name="android:layout_width">@dimen/dimen_300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_50dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- ImageView within ListView-->
+    <style name="ListImageView">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">@dimen/dimen_80dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_marginRight">@dimen/dimen_10dp</item>
+    </style>
+
+    <!-- Book Title & Author TextViews within ListView-->
+    <style name="ListTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_xsmall</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Currency & Price TextViews within ListView -->
+    <style name="ListTextViewPrice">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:paddingLeft">@dimen/dimen_3dp</item>
+        <item name="android:paddingRight">@dimen/dimen_3dp</item>
+    </style>
+
+    <!-- Book Detail TextView on top-right-->
+    <style name="TextViewDetailTopRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_xsmall</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:paddingStart">@dimen/dimen_10dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_0dp</item>
+    </style>
+
+    <style name="TextViewDetailTopRightAuthor" parent="TextViewDetailTopRight">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="TextViewDetailTopRightRating" parent="TextViewDetailTopRight">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20dp</item>
+    </style>
+
+    <style name="TextViewDetailTopRightPrice" parent="TextViewDetailTopRight">
+        <item name="android:textSize">@dimen/textsize_large</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+    </style>
+
+
+    <!-- Book Detail Buttons -->
+    <style name="ButtonDetailScreen">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorBrown</item>
+        <item name="android:textColor">@color/colorBackground</item>
+    </style>
+
+    <!-- Book Detail TextView at bottom -->
+    <style name="TextViewDetailBottom">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/textsize_xsmall</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:padding">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="TextViewDetailBottomLeft" parent="TextViewDetailBottom">
+        <item name="android:layout_weight">0.9</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="TextViewDetailBottomRight" parent="TextViewDetailBottom">
+        <item name="android:layout_weight">1.3</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:maxLines">14</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingStart">@dimen/dimen_10dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_0dp</item>
+    </style>
+
+    <!-- Preferences screen -->
+    <style name="PreferencesTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:listViewStyle">@style/listViewPrefs</item>
+    </style>
+
+    <style name="listViewPrefs" parent="@android:style/Widget.ListView">
+        <item name="android:background">@color/colorOchre</item>
+        <item name="android:cacheColorHint">@color/colorBrown</item>
+        <item name="android:divider">@color/colorBrown</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+    </style>
+
+</resources>
