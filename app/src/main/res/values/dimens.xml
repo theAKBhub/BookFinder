@@ -4,8 +4,13 @@
     <!-- Margin of UI screen along the 4 edges -->
     <dimen name="margin_activity">16dp</dimen>
 
+    <!-- Book Image Dimensions on BookDetailsActivity-->
     <dimen name="book_image_width">120dp</dimen>
     <dimen name="book_image_height">150dp</dimen>
+
+    <!-- Empty ListView Image Dimensions -->
+    <dimen name="empty_image_width">153dp</dimen>
+    <dimen name="empty_image_height">135dp</dimen>
 
     <!-- Font Sizes -->
     <dimen name="textsize_xsmall">12sp</dimen>
@@ -23,6 +28,7 @@
     <dimen name="dimen_50dp">50dp</dimen>
     <dimen name="dimen_80dp">80dp</dimen>
     <dimen name="dimen_85dp">85dp</dimen>
+    <dimen name="dimen_200dp">200dp</dimen>
     <dimen name="dimen_300dp">300dp</dimen>
 
 </resources>

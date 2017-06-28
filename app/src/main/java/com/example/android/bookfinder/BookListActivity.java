@@ -60,8 +60,9 @@ public class BookListActivity extends AppCompatActivity implements LoaderCallbac
 
         // Set empty view
         mEmptyStateTextView = (TextView) findViewById(R.id.text_empty_list);
+        View emptyView = (View) findViewById(R.id.empty_view);
         Utils.setCustomTypeface(mContext, mEmptyStateTextView);
-        bookListView.setEmptyView(mEmptyStateTextView);
+        bookListView.setEmptyView(emptyView);
 
         // Create a new adapter that takes the list of books as input
         mListBook = new ArrayList<Book>();

@@ -95,6 +95,13 @@
         <item name="android:paddingRight">@dimen/dimen_5dp</item>
     </style>
 
+    <!-- Empty State TextView -->
+    <style name="TextViewEmptyList" parent="TextViewInfo">
+        <item name="android:layout_width">@dimen/dimen_200dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+    </style>
+
 
     <!-- Book Detail TextViews on top-right-->
     <style name="TextViewDetailTopRight">

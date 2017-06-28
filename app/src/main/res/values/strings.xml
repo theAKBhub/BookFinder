@@ -10,7 +10,7 @@
         name to get a list of available books.</string>
     <string name="info_no_author">Author - unavailable</string>
     <string name="info_no_preview">No preview available</string>
-    <string name="info_no_books">No books found that matched your search criteria</string>
+    <string name="info_no_books">No books found that matched your search criteria. Go back to previous screen and try searching for a different title and/or author.</string>
     <string name="info_no_price">Not priced</string>
     <string name="info_not_priced">0.00</string>
     <string name="info_no_rating">Rating - unavailable</string>
