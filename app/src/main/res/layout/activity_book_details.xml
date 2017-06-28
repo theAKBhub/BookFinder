@@ -79,7 +79,6 @@
                 android:tag="@string/tag_button"
                 style="@style/ButtonDetailScreen"
                 android:text="@string/label_buy" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -101,7 +100,6 @@
                 android:tag="@string/tag_textview_2"
                 style="@style/TextViewDetailBottomRight"
                 tools:text="@string/placeholder_desc" />
-
         </LinearLayout>
 
     </LinearLayout>

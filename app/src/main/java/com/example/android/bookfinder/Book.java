@@ -63,11 +63,11 @@ public class Book {
      * @param publishedDate - Date the book was published
      * @param categories - Category of the book (e.g. Health, Business, etc.)
      * @param language - Language of the book (e.g. en)
-     * @param pageCount - Number of pages in the book
-     * @param printType - Print Type of the book (e.g. Book)
-     * @param retailPrice - Retail Price of the book (e.g. Book)
-     * @param currencyCode - Currency Code used in Retail Price of the book (e.g. Book)
-     * @param buyingLink - Buying Link of the book (e.g. Book)
+     * @param pageCount - Number of pages in the book (e.g. 150)
+     * @param printType - Print Type of the book (e.g. BOOK)
+     * @param retailPrice - Retail Price of the book (e.g. 15.75)
+     * @param currencyCode - Currency Code used in Retail Price of the book (e.g. GBP)
+     * @param buyingLink - Buying Link of the book
      * @param isEpubAvailable - Indicates whether epub version of the book is available
      * @param isPdfAvailable - Indicates whether pdf version of the book is available
      * @param rating - Rating of the book (e.g. 3.5)

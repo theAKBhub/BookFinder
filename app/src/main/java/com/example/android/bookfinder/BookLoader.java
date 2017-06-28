@@ -2,9 +2,7 @@ package com.example.android.bookfinder;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;
-
 import java.util.List;
-
 import utilities.QueryUtils;
 
 /**

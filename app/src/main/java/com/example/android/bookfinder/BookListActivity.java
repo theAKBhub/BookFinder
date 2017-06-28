@@ -18,11 +18,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import utilities.Utils;
+
 
 public class BookListActivity extends AppCompatActivity implements LoaderCallbacks<List<Book>> {
 
@@ -67,7 +66,6 @@ public class BookListActivity extends AppCompatActivity implements LoaderCallbac
         // Create a new adapter that takes the list of books as input
         mListBook = new ArrayList<Book>();
         mAdapter = new BookAdapter(this, mListBook);
-                //mAdapter = new BookAdapter(this, new ArrayList<Book>());
 
         // Create a new adapter that takes the list of books as input
         bookListView.setAdapter(mAdapter);
@@ -90,7 +88,7 @@ public class BookListActivity extends AppCompatActivity implements LoaderCallbac
             mEmptyStateTextView.setText(R.string.error_no_connection);
         }
 
-        // Set an OnClickListener on BookListView
+        // Set an OnClickListener on BookListView to launch BookDetailsActivity
         bookListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -119,8 +117,10 @@ public class BookListActivity extends AppCompatActivity implements LoaderCallbac
         Uri baseUri = Uri.parse(prepareSearchQuery());
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
+        // Append parameters obtained fro, SharedPreferences
         uriBuilder.appendQueryParameter("maxResults", maxResults);
         uriBuilder.appendQueryParameter("orderBy", orderBy);
+
         return new BookLoader(mContext, uriBuilder.toString());
     }
 
@@ -157,9 +157,6 @@ public class BookListActivity extends AppCompatActivity implements LoaderCallbac
         if ((mBookAuthorSearched != null) && (mBookAuthorSearched.length() != 0)) {
             stringBuilder.append("+inauthor:").append(mBookAuthorSearched);
         }
-
-        // Add max results to fetch
-      //  stringBuilder.append("&maxResults=").append(NUM_RESULTS_DEFAULT);
 
         return(stringBuilder.toString());
     }

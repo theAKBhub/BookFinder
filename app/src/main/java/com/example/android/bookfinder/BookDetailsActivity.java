@@ -10,15 +10,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.squareup.picasso.Picasso;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-
 import utilities.Utils;
+
 
 public class BookDetailsActivity extends AppCompatActivity implements View.OnClickListener {
 

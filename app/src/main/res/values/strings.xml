@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">Book Listing App</string>
 
     <!-- -->
@@ -34,6 +35,22 @@
     <string name="placeholder_rating">Rating - 3.5</string>
     <string name="placeholder_details">Published: Jun 1996\nCategory: Computers\nPrint Type: BOOK\nPages : 150\nEpub: Available\nPDF: Not available"</string>
     <string name="placeholder_desc">Android is new, Android is open, and Android is fun. It\'s also serious about business. Android for Work shows you how to harness the power of Android to stay productive and take your office on the road. This book also sheds light on the often daunting task of finding the right Android phone for the business user.</string>
+
+
+    <!-- -->
+    <!-- Rating Image Resource Names -->
+    <!-- -->
+    <string name="rating_none">rating_none</string>
+    <string name="rating_half">rating_half</string>
+    <string name="rating_one">rating_one</string>
+    <string name="rating_one_half">rating_one_half</string>
+    <string name="rating_two">rating_two</string>
+    <string name="rating_two_half">rating_two_half</string>
+    <string name="rating_three">rating_three</string>
+    <string name="rating_three_half">rating_three_half</string>
+    <string name="rating_four">rating_four</string>
+    <string name="rating_four_half">rating_four_half</string>
+    <string name="rating_five">rating_five</string>
 
 
     <!-- -->

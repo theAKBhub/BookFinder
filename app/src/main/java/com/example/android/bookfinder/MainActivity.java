@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import utilities.Utils;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * This method launches BookListActivity after validating Book Title and Author inputs
      */
     public void showSearchResults() {
-
         if (validateInput()) {
             Intent intent = new Intent(mContext, BookListActivity.class);
 
@@ -87,7 +86,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("bookAuthor", mBookAuthor.replaceAll(" ", "+"));
             startActivity(intent);
         }
-
     }
 
     /**

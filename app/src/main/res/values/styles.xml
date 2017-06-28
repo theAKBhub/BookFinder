@@ -50,6 +50,7 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+
     <!-- ImageView within ListView-->
     <style name="ListImageView">
         <item name="android:layout_width">@dimen/dimen_0dp</item>
@@ -78,9 +79,24 @@
         <item name="android:textColor">@color/colorBackground</item>
         <item name="android:paddingLeft">@dimen/dimen_3dp</item>
         <item name="android:paddingRight">@dimen/dimen_3dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+        <item name="android:background">@color/colorAccent</item>
     </style>
 
-    <!-- Book Detail TextView on top-right-->
+    <!-- Rating ImageView within ListView -->
+    <style name="ListImageViewRating">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimen_5dp</item>
+        <item name="android:paddingRight">@dimen/dimen_5dp</item>
+    </style>
+
+
+    <!-- Book Detail TextViews on top-right-->
     <style name="TextViewDetailTopRight">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -115,7 +131,8 @@
         <item name="android:textColor">@color/colorBackground</item>
     </style>
 
-    <!-- Book Detail TextView at bottom -->
+
+    <!-- Book Detail TextViews at bottom -->
     <style name="TextViewDetailBottom">
         <item name="android:layout_width">@dimen/dimen_0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -138,6 +155,7 @@
         <item name="android:paddingStart">@dimen/dimen_10dp</item>
         <item name="android:paddingEnd">@dimen/dimen_0dp</item>
     </style>
+
 
     <!-- Preferences screen -->
     <style name="PreferencesTheme" parent="Theme.AppCompat.Light.DarkActionBar">

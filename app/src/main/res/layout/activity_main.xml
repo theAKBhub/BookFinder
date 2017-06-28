@@ -46,6 +46,6 @@ tools:context="com.example.android.bookfinder.MainActivity">
             android:tag="@string/tag_button"
             style="@style/ButtonSearch"
             android:text="@string/label_button_search"/>
-
     </LinearLayout>
+
 </ScrollView>

@@ -3,14 +3,11 @@ package utilities;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
-
 import com.example.android.bookfinder.Book;
 import com.example.android.bookfinder.R;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -179,7 +176,7 @@ public final class QueryUtils {
             return null;
         }
 
-        /** Create an empty ArrayList that we can start adding books to */
+        /** Create an empty ArrayList used to add books */
         List<Book> books = new ArrayList<>();
 
         try {

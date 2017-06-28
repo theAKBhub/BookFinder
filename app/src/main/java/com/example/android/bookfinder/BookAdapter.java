@@ -7,11 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.squareup.picasso.Picasso;
-
 import java.util.List;
-
 import utilities.Utils;
 
 /**
@@ -142,37 +139,37 @@ public class BookAdapter extends ArrayAdapter<Book> {
 
         switch (String.valueOf(rating)) {
             case "0.5":
-                ratingResource = "rating_half";
+                ratingResource = getContext().getString(R.string.rating_half);
                 break;
             case "1.0":
-                ratingResource = "rating_one";
+                ratingResource = getContext().getString(R.string.rating_one);
                 break;
             case "1.5":
-                ratingResource = "rating_one_half";
+                ratingResource = getContext().getString(R.string.rating_one_half);
                 break;
             case "2.0":
-                ratingResource = "rating_two";
+                ratingResource = getContext().getString(R.string.rating_two);
                 break;
             case "2.5":
-                ratingResource = "rating_two_half";
+                ratingResource = getContext().getString(R.string.rating_two_half);
                 break;
             case "3.0":
-                ratingResource = "rating_three";
+                ratingResource = getContext().getString(R.string.rating_three);
                 break;
             case "3.5":
-                ratingResource = "rating_three_half";
+                ratingResource = getContext().getString(R.string.rating_three_half);
                 break;
             case "4.0":
-                ratingResource = "rating_four";
+                ratingResource = getContext().getString(R.string.rating_four);
                 break;
             case "4.5":
-                ratingResource = "rating_four_half";
+                ratingResource = getContext().getString(R.string.rating_four_half);
                 break;
             case "5.0":
-                ratingResource = "rating_five";
+                ratingResource = getContext().getString(R.string.rating_five);
                 break;
             default:
-                ratingResource = "rating_none";
+                ratingResource = getContext().getString(R.string.rating_none);
                 break;
         }
 
