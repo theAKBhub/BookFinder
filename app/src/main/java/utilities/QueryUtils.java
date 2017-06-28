@@ -189,7 +189,7 @@ public final class QueryUtils {
             JSONObject volumeInfo;              // VolumeInfo object of the currentBook
             String title;                       // Title of the currentBook
             JSONArray authorsArray;             // Author Array of the currentBook
-            String author = "";                 // Author of the currentBook - obtained from authorsArray
+            String authorList = "";             // Authors of the currentBook - obtained from authorsArray
             String publishedDate = "";          // Published Date of the currentBook
             JSONArray categoriesArray;          // Categories Array of the currentBook
             String category = "";               // Category of the currentBook - obtained from categoriesArray
@@ -228,9 +228,17 @@ public final class QueryUtils {
                     title = volumeInfo.getString(API_KEY_TITLE);
 
                     // Get value for author if the key exists
+                    String author = "";
                     if (volumeInfo.has(API_KEY_AUTHORS)) {
                         authorsArray = volumeInfo.getJSONArray(API_KEY_AUTHORS);
-                        author = authorsArray.getString(0);
+
+                        if (authorsArray.length() > 1) {
+                            authorList = authorsArray.join(", ").replaceAll("\"", "");
+                        } else if (authorsArray.length() == 1) {
+                            authorList = authorsArray.getString(0);
+                        } else if (authorsArray.length() == 0) {
+                            authorList = "";
+                        }
                     }
 
                     // Get value for publishedDate if the key exists
@@ -347,7 +355,7 @@ public final class QueryUtils {
                     // Create a new {@link Book} object with parameters obtained from JSON response
                     Book book = new Book(
                             title,
-                            author,
+                            authorList,
                             publishedDate,
                             category,
                             language,
