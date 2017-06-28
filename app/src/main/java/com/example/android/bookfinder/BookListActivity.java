@@ -18,8 +18,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import utilities.Utils;
 
 
@@ -60,9 +62,8 @@ public class BookListActivity extends AppCompatActivity implements LoaderCallbac
 
         // Set empty view
         mEmptyStateTextView = (TextView) findViewById(R.id.text_empty_list);
-        View emptyView = (View) findViewById(R.id.empty_view);
         Utils.setCustomTypeface(mContext, mEmptyStateTextView);
-        bookListView.setEmptyView(emptyView);
+        bookListView.setEmptyView(mEmptyStateTextView);
 
         // Create a new adapter that takes the list of books as input
         mListBook = new ArrayList<Book>();

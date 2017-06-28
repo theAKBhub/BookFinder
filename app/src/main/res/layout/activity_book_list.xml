@@ -18,26 +18,11 @@
         android:dividerHeight="@dimen/margin_activity"/>
 
     <!-- Empty view for scenario when list has no items -->
-    <RelativeLayout
-        android:id="@+id/empty_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
-
-        <ImageView
-            android:id="@+id/image_empty_list"
-            android:layout_width="@dimen/empty_image_width"
-            android:layout_height="@dimen/empty_image_height"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/empty_booklist"/>
-
-        <TextView
-            android:id="@+id/text_empty_list"
-            android:tag="@string/tag_textview"
-            android:layout_below="@id/image_empty_list"
-            style="@style/TextViewEmptyList"
-            tools:text="@string/app_name" />
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_empty_list"
+        android:tag="@string/tag_textview"
+        style="@style/TextViewEmptyList"
+        tools:text="@string/app_name" />
 
     <!-- Loading indicator shown before first load -->
     <ProgressBar
